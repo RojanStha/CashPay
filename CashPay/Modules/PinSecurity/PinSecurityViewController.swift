@@ -7,29 +7,35 @@
 //
 
 import UIKit
+import PinCodeTextField
 
 class PinSecurityViewController: UIViewController {
 
+    @IBOutlet weak var btnDone: UIButton!
+    @IBOutlet weak var pinView: PinCodeTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setup()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        pinView.becomeFirstResponder()
+    }
+    
+    func setup(){
+        btnDone.layer.cornerRadius = self.btnDone.frame.height / 2
+        pinView.layer.cornerRadius = self.pinView.frame.height / 2
+        
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func BtnDone(_ sender: Any) {
+        
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

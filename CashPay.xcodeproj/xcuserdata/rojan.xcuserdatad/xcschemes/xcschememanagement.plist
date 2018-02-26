@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>topUpNp.xcscheme</key>
+		<key>CashPay.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>13</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>24FE14E12004A7D800923E50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24FE14F52004A7D800923E50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24FE15002004A7D800923E50</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

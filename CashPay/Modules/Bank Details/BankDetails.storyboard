@@ -1,7 +1,47 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="48C-ie-MWu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Bank Detail View Controller-->
+        <scene sceneID="eZm-6q-2Fp">
+            <objects>
+                <viewController storyboardIdentifier="BankDetailViewController" id="48C-ie-MWu" customClass="BankDetailViewController" customModule="CashPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQ1-pG-Fja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-rx-0zJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LdR-rx-0zJ" firstAttribute="trailing" secondItem="U1u-d5-gIv" secondAttribute="trailing" id="4Fo-Lg-eic"/>
+                            <constraint firstItem="LdR-rx-0zJ" firstAttribute="top" secondItem="TQ1-pG-Fja" secondAttribute="top" id="5zl-VJ-OCR"/>
+                            <constraint firstItem="LdR-rx-0zJ" firstAttribute="leading" secondItem="U1u-d5-gIv" secondAttribute="leading" id="Dp9-zZ-7Sq"/>
+                            <constraint firstItem="LdR-rx-0zJ" firstAttribute="bottom" secondItem="U1u-d5-gIv" secondAttribute="bottom" id="Z16-ZN-H6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U1u-d5-gIv"/>
+                    </view>
+                    <connections>
+                        <outlet property="BankDetailView" destination="LdR-rx-0zJ" id="qcw-8M-afj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Omh-8G-PPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1512.8" y="-94.002998500749626"/>
+        </scene>
+    </scenes>
 </document>

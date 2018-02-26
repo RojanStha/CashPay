@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class StatementPin{
+    
+    var pinno:String?
+    var Imei:String?
+    
+    init(pin:String, Imei:String) {
+        self.pinno = pin
+        self.Imei = Imei
+    }
+
+}

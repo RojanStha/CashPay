@@ -7,11 +7,26 @@
 //
 
 import Foundation
+import ObjectMapper
 
+
+class balanceData: Mappable {
+    
+    var balanceAmount:Int?
+    
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        balanceAmount <- map["message"]
+    }
+    
+}
 
 class balanceRefresh{
 
     var imei: String?
+   
     
     init() {}
     

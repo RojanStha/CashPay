@@ -1,0 +1,15 @@
+//
+//  TopupCell.swift
+//  topUpNp
+//
+//  Created by Rojan on 1/26/2561 BE.
+//  Copyright © 2561 Rojan. All rights reserved.
+//
+
+import UIKit
+
+class TopupCell: UICollectionViewCell {
+    
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var itemImg: UIImageView!
+}

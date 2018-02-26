@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import ObjectMapper
+
+class ErrorResponse: Mappable {
+    
+    var status: String?
+    var message: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        status <- map["status"]
+        message <- map["message"]
+    }
+}

@@ -7,3 +7,17 @@
 //
 
 import Foundation
+class ForgotPass{
+    
+    var email: String?
+  
+    
+    
+    init(email : String){
+        self.email = email
+       
+    }
+    
+    
+    
+}

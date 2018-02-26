@@ -10,26 +10,34 @@ import UIKit
 
 class WorldlinkAmountViewController: UIViewController {
 
+    @IBOutlet weak var btnProcess: UIButton!
+    @IBOutlet weak var txtAmount: UILabel!
+    @IBOutlet weak var txtUsername: UILabel!
+    @IBOutlet weak var ingView: UIImageView!
+    
+    var username:String?
+    var navTitle:String?
+    var image:UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
 
         // Do any additional setup after loading the view.
     }
+    
+    func setup(){
+        
+        self.txtUsername.text = username
+        self.title = navTitle
+        self.ingView.image = image
+        btnProcess.layer.cornerRadius = self.btnProcess.frame.height / 2
+        
+    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func ProceedBtn(_ sender: Any) {
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

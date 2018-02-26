@@ -10,6 +10,13 @@ import UIKit
 
 class statementCell: UITableViewCell {
 
+    @IBOutlet weak var txtTitle: UILabel!
+    
+    
+    @IBOutlet weak var txtAmount: UILabel!
+    
+    
+    @IBOutlet weak var txtPercentage: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

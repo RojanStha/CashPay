@@ -7,19 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240909B920276A5100B810FD /* PopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240909B820276A5100B810FD /* PopUp.xib */; };
+		240909BB20276E3B00B810FD /* PopUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240909BA20276E3B00B810FD /* PopUP.swift */; };
 		24164EDF200B2FEA0096B055 /* ViewContact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24164EDE200B2FEA0096B055 /* ViewContact.storyboard */; };
 		24164EE1200B2FFD0096B055 /* ViewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24164EE0200B2FFD0096B055 /* ViewContactVC.swift */; };
 		24164EE3200B365A0096B055 /* ViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24164EE2200B365A0096B055 /* ViewCustomCell.swift */; };
 		24188239201AF585006E08B8 /* ResetPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24188238201AF585006E08B8 /* ResetPin.swift */; };
 		2418823B201B059F006E08B8 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418823A201B059F006E08B8 /* user.swift */; };
 		2418823F201B48B9006E08B8 /* MainDashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2418823E201B48B9006E08B8 /* MainDashVC.swift */; };
-		24188241201B4D7C006E08B8 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24188240201B4D7C006E08B8 /* AuthModel.swift */; };
 		24188246201B5484006E08B8 /* BillpaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24188245201B5484006E08B8 /* BillpaymentCell.swift */; };
 		24188248201B549C006E08B8 /* RechargeCardsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24188247201B549C006E08B8 /* RechargeCardsCell.swift */; };
 		2418824A201B54BB006E08B8 /* TopupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24188249201B54BB006E08B8 /* TopupCell.swift */; };
+		241F82CA201DD1FE0024E4BA /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82C9201DD1FE0024E4BA /* ErrorResponse.swift */; };
+		241F82CC201DE25A0024E4BA /* TopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82CB201DE25A0024E4BA /* TopUp.swift */; };
+		241F82CE201F1E100024E4BA /* Transfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82CD201F1E100024E4BA /* Transfer.swift */; };
+		241F82D0201F92790024E4BA /* TopUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82CF201F92790024E4BA /* TopUpService.swift */; };
+		241F82D2201F92D30024E4BA /* TransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82D1201F92D30024E4BA /* TransferService.swift */; };
+		241F82D4201F95C90024E4BA /* SuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82D3201F95C90024E4BA /* SuccessResponse.swift */; };
+		241F82D820219CB90024E4BA /* Billpayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F82D720219CB90024E4BA /* Billpayment.swift */; };
 		2423CB6C2004D50900EB196E /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2423CB6B2004D50900EB196E /* Signin.storyboard */; };
 		2423CB6E2004D51500EB196E /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2423CB6D2004D51500EB196E /* SigninViewController.swift */; };
-		2486756920060A2A00B3180E /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486756820060A2A00B3180E /* DashViewController.swift */; };
+		242F9BF32043E8810015DA00 /* PinSecurity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242F9BF22043E8810015DA00 /* PinSecurity.storyboard */; };
+		242F9BF52043E8930015DA00 /* PinSecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242F9BF42043E8930015DA00 /* PinSecurityViewController.swift */; };
+		24325FB52021A50E0023CBB0 /* BillpaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FB42021A50E0023CBB0 /* BillpaymentService.swift */; };
+		24325FB7202441B30023CBB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24325FB6202441B20023CBB0 /* Assets.xcassets */; };
+		24325FB92024498D0023CBB0 /* statementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FB82024498D0023CBB0 /* statementCell.swift */; };
+		24325FBB20245DB70023CBB0 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FBA20245DB70023CBB0 /* FilterViewController.swift */; };
+		24325FBE2024828E0023CBB0 /* AddFund.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24325FBD2024828E0023CBB0 /* AddFund.storyboard */; };
+		24325FC02024829C0023CBB0 /* AddFundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FBF2024829C0023CBB0 /* AddFundViewController.swift */; };
+		24325FC320248BCE0023CBB0 /* Pin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24325FC220248BCE0023CBB0 /* Pin.storyboard */; };
+		24325FC520248BE10023CBB0 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FC420248BE10023CBB0 /* PinViewController.swift */; };
+		24325FC7202708BE0023CBB0 /* IndentTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24325FC6202708BE0023CBB0 /* IndentTextfield.swift */; };
+		24326005202721630023CBB0 /* ColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24326004202721630023CBB0 /* ColorHex.swift */; };
+		24334ACA20287CA700AE83B6 /* BalanceRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24334AC920287CA700AE83B6 /* BalanceRefresh.swift */; };
+		24334ACF20299D3B00AE83B6 /* ResellerLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24334ACE20299D3B00AE83B6 /* ResellerLogin.storyboard */; };
+		24334AD120299D4E00AE83B6 /* ResellerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24334AD020299D4E00AE83B6 /* ResellerLoginViewController.swift */; };
+		24334AD32029B97300AE83B6 /* BalanceRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24334AD22029B97300AE83B6 /* BalanceRef.swift */; };
+		244FEBEC203FF4C900B076BE /* RechargeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244FEBEB203FF4C900B076BE /* RechargeService.swift */; };
+		244FEBEE204001DF00B076BE /* NeaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244FEBED204001DF00B076BE /* NeaService.swift */; };
+		244FEBF02040021000B076BE /* NeaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244FEBEF2040021000B076BE /* NeaModel.swift */; };
+		245F2EF92031554100CF7DC3 /* ElectricityBill.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2EF82031554100CF7DC3 /* ElectricityBill.storyboard */; };
+		245F2EFB203155B300CF7DC3 /* ElectricityBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2EFA203155B300CF7DC3 /* ElectricityBillViewController.swift */; };
+		245F2EFE2031B02100CF7DC3 /* Worldlink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2EFD2031B02100CF7DC3 /* Worldlink.storyboard */; };
+		245F2F002031B02E00CF7DC3 /* WorldlinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2EFF2031B02E00CF7DC3 /* WorldlinkViewController.swift */; };
+		245F2F032031B35F00CF7DC3 /* worldlinkAmount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2F022031B35F00CF7DC3 /* worldlinkAmount.storyboard */; };
+		245F2F052031B37600CF7DC3 /* WorldlinkAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F042031B37600CF7DC3 /* WorldlinkAmountViewController.swift */; };
+		245F2F462032C18B00CF7DC3 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245F2F442032C18B00CF7DC3 /* Contacts.framework */; };
+		245F2F472032C18B00CF7DC3 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245F2F452032C18B00CF7DC3 /* ContactsUI.framework */; };
+		245F2F492032E15300CF7DC3 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F482032E15300CF7DC3 /* NotificationService.swift */; };
+		245F2F4D2032E9C600CF7DC3 /* BankDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F4C2032E9C600CF7DC3 /* BankDetailViewController.swift */; };
+		245F2F502032F3D100CF7DC3 /* Aboutus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2F4F2032F3D100CF7DC3 /* Aboutus.storyboard */; };
+		245F2F522032F3DF00CF7DC3 /* AboutusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F512032F3DF00CF7DC3 /* AboutusViewController.swift */; };
+		245F2F582033F5A000CF7DC3 /* BecomeReseller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2F572033F5A000CF7DC3 /* BecomeReseller.storyboard */; };
+		245F2F5A2033F5B000CF7DC3 /* BecomeResellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F592033F5B000CF7DC3 /* BecomeResellerViewController.swift */; };
+		245F2F5C2033F5C300CF7DC3 /* FindReseller.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245F2F5B2033F5C300CF7DC3 /* FindReseller.storyboard */; };
+		245F2F5E2033F5DE00CF7DC3 /* FindResellerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245F2F5D2033F5DE00CF7DC3 /* FindResellerViewController.swift */; };
+		24638E45202D615500A72611 /* StatementData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24638E44202D615500A72611 /* StatementData.swift */; };
 		2486757520062CA000B3180E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2486757420062CA000B3180E /* Profile.storyboard */; };
 		2486757720062CB600B3180E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486757620062CB600B3180E /* ProfileViewController.swift */; };
 		248675792006354000B3180E /* profileCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248675782006354000B3180E /* profileCustomCell.swift */; };
@@ -27,9 +70,7 @@
 		248675892007286D00B3180E /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248675882007286D00B3180E /* SideMenu.storyboard */; };
 		2486758B2007288500B3180E /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486758A2007288500B3180E /* SideMenuViewController.swift */; };
 		2486758D20072C6700B3180E /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486758C20072C6700B3180E /* SideMenuCell.swift */; };
-		2486758F2007336A00B3180E /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486758E2007336A00B3180E /* TabViewController.swift */; };
 		2486759320073D5E00B3180E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2486759220073D5E00B3180E /* SettingViewController.swift */; };
-		248675972007629600B3180E /* ListTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248675962007629600B3180E /* ListTypeCell.swift */; };
 		248675992007634700B3180E /* ListTypeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248675982007634700B3180E /* ListTypeCollectionCell.swift */; };
 		248675A020077E5500B3180E /* Transfer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2486759F20077E5500B3180E /* Transfer.storyboard */; };
 		248675A220077E7400B3180E /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248675A120077E7400B3180E /* TransferViewController.swift */; };
@@ -45,8 +86,6 @@
 		248675BB2008C19E00B3180E /* AddContact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248675BA2008C19E00B3180E /* AddContact.storyboard */; };
 		248675BD2008C1AC00B3180E /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248675BC2008C1AC00B3180E /* AddContactViewController.swift */; };
 		24991CFD2018A5E600584852 /* AmoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24991CFC2018A5E600584852 /* AmoutCell.swift */; };
-		24991D3920199C1800584852 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24991D3820199C1800584852 /* PopUpViewController.swift */; };
-		24991D412019BB8D00584852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24991D402019BB8C00584852 /* Assets.xcassets */; };
 		24991D452019F19400584852 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24991D442019F19400584852 /* login.swift */; };
 		24991D472019F28300584852 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24991D462019F28300584852 /* SignUp.swift */; };
 		24CF1955200B6937002A14DA /* Ministatement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CF1954200B6937002A14DA /* Ministatement.storyboard */; };
@@ -58,6 +97,18 @@
 		24DF97BB2004DDBE0016DB50 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DF97BA2004DDBE0016DB50 /* Dashboard.storyboard */; };
 		24DF97C02004E2B00016DB50 /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DF97BF2004E2B00016DB50 /* ResetPassword.storyboard */; };
 		24DF97C22004E2C20016DB50 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DF97C12004E2C20016DB50 /* ResetPasswordViewController.swift */; };
+		24FC4092202A0CF2007BE139 /* reseller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4091202A0CF2007BE139 /* reseller.swift */; };
+		24FC4094202A0DD1007BE139 /* ResellerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4093202A0DD1007BE139 /* ResellerLogin.swift */; };
+		24FC4096202AB23E007BE139 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4095202AB23E007BE139 /* ForgotPassword.swift */; };
+		24FC4098202AB798007BE139 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC4097202AB798007BE139 /* ResetPassword.swift */; };
+		24FC409B202ACC94007BE139 /* ResetPin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC409A202ACC94007BE139 /* ResetPin.storyboard */; };
+		24FC409D202ACCA1007BE139 /* ResetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC409C202ACCA1007BE139 /* ResetPinViewController.swift */; };
+		24FC40A0202AD076007BE139 /* BankDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FC409F202AD076007BE139 /* BankDetails.storyboard */; };
+		24FC40A4202AECA9007BE139 /* Pin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24FC40A3202AECA9007BE139 /* Pin.xib */; };
+		24FC40A9202B0FFE007BE139 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC40A8202B0FFE007BE139 /* Pin.swift */; };
+		24FC40AB202C46B5007BE139 /* normalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC40AA202C46B5007BE139 /* normalUser.swift */; };
+		24FC40B1202C6054007BE139 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC40B0202C6054007BE139 /* Statement.swift */; };
+		24FC40B3202C6607007BE139 /* StatementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC40B2202C6607007BE139 /* StatementService.swift */; };
 		24FE14E62004A7D800923E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE14E52004A7D800923E50 /* AppDelegate.swift */; };
 		24FE14E82004A7D800923E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE14E72004A7D800923E50 /* ViewController.swift */; };
 		24FE14EB2004A7D800923E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FE14E92004A7D800923E50 /* Main.storyboard */; };
@@ -66,9 +117,11 @@
 		24FE15062004A7D800923E50 /* topUpNpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE15052004A7D800923E50 /* topUpNpUITests.swift */; };
 		24FE15192004C0AC00923E50 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FE15182004C0AC00923E50 /* Signup.storyboard */; };
 		24FE151B2004C0B900923E50 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE151A2004C0B900923E50 /* SignUpViewController.swift */; };
+		5172538A57D76ABA35012711 /* Pods_CashPayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFA72DF02A38ABD5AF80C48 /* Pods_CashPayUITests.framework */; };
 		7353F08F3DDD0A30A65CF229 /* Pods_topUpNpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB8EA0F89A76919365BF6F2 /* Pods_topUpNpUITests.framework */; };
 		7D942A3549239CB943199B47 /* Pods_topUpNpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C92C844D56B1C21A7CB9AD /* Pods_topUpNpTests.framework */; };
-		F4AE0FCC0CBE1F6036534714 /* Pods_topUpNp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABA2BF6E5630259BA3E7328 /* Pods_topUpNp.framework */; };
+		CA7C512F6CF22EA455038A76 /* Pods_CashPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844393A9E72DA0D682120 /* Pods_CashPay.framework */; };
+		D43B81C2866A6F4ACDDC02F8 /* Pods_CashPayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D0223BF1A32FD47BBF4C9A /* Pods_CashPayTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,19 +142,63 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8B4F7C691ACC93A85071AF /* Pods-CashPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashPay/Pods-CashPay.debug.xcconfig"; sourceTree = "<group>"; };
+		240909B820276A5100B810FD /* PopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUp.xib; sourceTree = "<group>"; };
+		240909BA20276E3B00B810FD /* PopUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUP.swift; sourceTree = "<group>"; };
 		24164EDE200B2FEA0096B055 /* ViewContact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewContact.storyboard; sourceTree = "<group>"; };
 		24164EE0200B2FFD0096B055 /* ViewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContactVC.swift; sourceTree = "<group>"; };
 		24164EE2200B365A0096B055 /* ViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCustomCell.swift; sourceTree = "<group>"; };
 		24188238201AF585006E08B8 /* ResetPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPin.swift; sourceTree = "<group>"; };
 		2418823A201B059F006E08B8 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 		2418823E201B48B9006E08B8 /* MainDashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashVC.swift; sourceTree = "<group>"; };
-		24188240201B4D7C006E08B8 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		24188245201B5484006E08B8 /* BillpaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillpaymentCell.swift; sourceTree = "<group>"; };
 		24188247201B549C006E08B8 /* RechargeCardsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeCardsCell.swift; sourceTree = "<group>"; };
 		24188249201B54BB006E08B8 /* TopupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupCell.swift; sourceTree = "<group>"; };
+		241F82C9201DD1FE0024E4BA /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		241F82CB201DE25A0024E4BA /* TopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUp.swift; sourceTree = "<group>"; };
+		241F82CD201F1E100024E4BA /* Transfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transfer.swift; sourceTree = "<group>"; };
+		241F82CF201F92790024E4BA /* TopUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpService.swift; sourceTree = "<group>"; };
+		241F82D1201F92D30024E4BA /* TransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferService.swift; sourceTree = "<group>"; };
+		241F82D3201F95C90024E4BA /* SuccessResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessResponse.swift; sourceTree = "<group>"; };
+		241F82D720219CB90024E4BA /* Billpayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billpayment.swift; sourceTree = "<group>"; };
 		2423CB6B2004D50900EB196E /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		2423CB6D2004D51500EB196E /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
-		2486756820060A2A00B3180E /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
+		242F9BF22043E8810015DA00 /* PinSecurity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PinSecurity.storyboard; sourceTree = "<group>"; };
+		242F9BF42043E8930015DA00 /* PinSecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinSecurityViewController.swift; sourceTree = "<group>"; };
+		24325FB42021A50E0023CBB0 /* BillpaymentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillpaymentService.swift; sourceTree = "<group>"; };
+		24325FB6202441B20023CBB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24325FB82024498D0023CBB0 /* statementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statementCell.swift; sourceTree = "<group>"; };
+		24325FBA20245DB70023CBB0 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		24325FBD2024828E0023CBB0 /* AddFund.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddFund.storyboard; sourceTree = "<group>"; };
+		24325FBF2024829C0023CBB0 /* AddFundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFundViewController.swift; sourceTree = "<group>"; };
+		24325FC220248BCE0023CBB0 /* Pin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
+		24325FC420248BE10023CBB0 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		24325FC6202708BE0023CBB0 /* IndentTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentTextfield.swift; sourceTree = "<group>"; };
+		24326004202721630023CBB0 /* ColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHex.swift; sourceTree = "<group>"; };
+		24334AC920287CA700AE83B6 /* BalanceRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRefresh.swift; sourceTree = "<group>"; };
+		24334ACE20299D3B00AE83B6 /* ResellerLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResellerLogin.storyboard; sourceTree = "<group>"; };
+		24334AD020299D4E00AE83B6 /* ResellerLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResellerLoginViewController.swift; sourceTree = "<group>"; };
+		24334AD22029B97300AE83B6 /* BalanceRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRef.swift; sourceTree = "<group>"; };
+		244FEBEB203FF4C900B076BE /* RechargeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeService.swift; sourceTree = "<group>"; };
+		244FEBED204001DF00B076BE /* NeaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeaService.swift; sourceTree = "<group>"; };
+		244FEBEF2040021000B076BE /* NeaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeaModel.swift; sourceTree = "<group>"; };
+		245F2EF82031554100CF7DC3 /* ElectricityBill.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ElectricityBill.storyboard; sourceTree = "<group>"; };
+		245F2EFA203155B300CF7DC3 /* ElectricityBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityBillViewController.swift; sourceTree = "<group>"; };
+		245F2EFD2031B02100CF7DC3 /* Worldlink.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Worldlink.storyboard; sourceTree = "<group>"; };
+		245F2EFF2031B02E00CF7DC3 /* WorldlinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldlinkViewController.swift; sourceTree = "<group>"; };
+		245F2F022031B35F00CF7DC3 /* worldlinkAmount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = worldlinkAmount.storyboard; sourceTree = "<group>"; };
+		245F2F042031B37600CF7DC3 /* WorldlinkAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldlinkAmountViewController.swift; sourceTree = "<group>"; };
+		245F2F442032C18B00CF7DC3 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		245F2F452032C18B00CF7DC3 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		245F2F482032E15300CF7DC3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		245F2F4C2032E9C600CF7DC3 /* BankDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankDetailViewController.swift; sourceTree = "<group>"; };
+		245F2F4F2032F3D100CF7DC3 /* Aboutus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Aboutus.storyboard; sourceTree = "<group>"; };
+		245F2F512032F3DF00CF7DC3 /* AboutusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutusViewController.swift; sourceTree = "<group>"; };
+		245F2F572033F5A000CF7DC3 /* BecomeReseller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BecomeReseller.storyboard; sourceTree = "<group>"; };
+		245F2F592033F5B000CF7DC3 /* BecomeResellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeResellerViewController.swift; sourceTree = "<group>"; };
+		245F2F5B2033F5C300CF7DC3 /* FindReseller.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindReseller.storyboard; sourceTree = "<group>"; };
+		245F2F5D2033F5DE00CF7DC3 /* FindResellerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindResellerViewController.swift; sourceTree = "<group>"; };
+		24638E44202D615500A72611 /* StatementData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementData.swift; sourceTree = "<group>"; };
 		2486757420062CA000B3180E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		2486757620062CB600B3180E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		248675782006354000B3180E /* profileCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCustomCell.swift; sourceTree = "<group>"; };
@@ -109,9 +206,7 @@
 		248675882007286D00B3180E /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		2486758A2007288500B3180E /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		2486758C20072C6700B3180E /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
-		2486758E2007336A00B3180E /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		2486759220073D5E00B3180E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		248675962007629600B3180E /* ListTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTypeCell.swift; sourceTree = "<group>"; };
 		248675982007634700B3180E /* ListTypeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTypeCollectionCell.swift; sourceTree = "<group>"; };
 		2486759F20077E5500B3180E /* Transfer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transfer.storyboard; sourceTree = "<group>"; };
 		248675A120077E7400B3180E /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +222,6 @@
 		248675BA2008C19E00B3180E /* AddContact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddContact.storyboard; sourceTree = "<group>"; };
 		248675BC2008C1AC00B3180E /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		24991CFC2018A5E600584852 /* AmoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmoutCell.swift; sourceTree = "<group>"; };
-		24991D3820199C1800584852 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		24991D402019BB8C00584852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24991D442019F19400584852 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		24991D462019F28300584852 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		24CF1954200B6937002A14DA /* Ministatement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ministatement.storyboard; sourceTree = "<group>"; };
@@ -140,29 +233,49 @@
 		24DF97BA2004DDBE0016DB50 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		24DF97BF2004E2B00016DB50 /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
 		24DF97C12004E2C20016DB50 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
-		24FE14E22004A7D800923E50 /* topUpNp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = topUpNp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FC4091202A0CF2007BE139 /* reseller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reseller.swift; sourceTree = "<group>"; };
+		24FC4093202A0DD1007BE139 /* ResellerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResellerLogin.swift; sourceTree = "<group>"; };
+		24FC4095202AB23E007BE139 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		24FC4097202AB798007BE139 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		24FC409A202ACC94007BE139 /* ResetPin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPin.storyboard; sourceTree = "<group>"; };
+		24FC409C202ACCA1007BE139 /* ResetPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPinViewController.swift; sourceTree = "<group>"; };
+		24FC409F202AD076007BE139 /* BankDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BankDetails.storyboard; sourceTree = "<group>"; };
+		24FC40A3202AECA9007BE139 /* Pin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Pin.xib; sourceTree = "<group>"; };
+		24FC40A8202B0FFE007BE139 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
+		24FC40AA202C46B5007BE139 /* normalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = normalUser.swift; sourceTree = "<group>"; };
+		24FC40B0202C6054007BE139 /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		24FC40B2202C6607007BE139 /* StatementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementService.swift; sourceTree = "<group>"; };
+		24FE14E22004A7D800923E50 /* CashPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FE14E52004A7D800923E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24FE14E72004A7D800923E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24FE14EA2004A7D800923E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24FE14EF2004A7D800923E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24FE14F12004A7D800923E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24FE14F62004A7D800923E50 /* topUpNpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topUpNpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FE14F62004A7D800923E50 /* CashPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FE14FA2004A7D800923E50 /* topUpNpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topUpNpTests.swift; sourceTree = "<group>"; };
 		24FE14FC2004A7D800923E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24FE15012004A7D800923E50 /* topUpNpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topUpNpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FE15012004A7D800923E50 /* CashPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FE15052004A7D800923E50 /* topUpNpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topUpNpUITests.swift; sourceTree = "<group>"; };
 		24FE15072004A7D800923E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24FE15182004C0AC00923E50 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		24FE151A2004C0B900923E50 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2BFA72DF02A38ABD5AF80C48 /* Pods_CashPayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashPayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		376189F61206B62F252E697D /* Pods-topUpNpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNpTests/Pods-topUpNpTests.release.xcconfig"; sourceTree = "<group>"; };
 		571B5A5EF3A6006BDD64D6F0 /* Pods-topUpNp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNp/Pods-topUpNp.debug.xcconfig"; sourceTree = "<group>"; };
 		5EB8EA0F89A76919365BF6F2 /* Pods_topUpNpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_topUpNpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D0223BF1A32FD47BBF4C9A /* Pods_CashPayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashPayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C92C844D56B1C21A7CB9AD /* Pods_topUpNpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_topUpNpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD850375F50E8E87F87B36B1 /* Pods-topUpNpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNpUITests/Pods-topUpNpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B64FB08268554B3F54981F82 /* Pods-CashPayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashPayTests/Pods-CashPayTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6C104609DD120F21E32A0C5 /* Pods-CashPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashPay/Pods-CashPay.release.xcconfig"; sourceTree = "<group>"; };
+		B70844393A9E72DA0D682120 /* Pods_CashPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC672A499C4FD24C45CD8B92 /* Pods-topUpNp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNp.release.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNp/Pods-topUpNp.release.xcconfig"; sourceTree = "<group>"; };
 		CABA2BF6E5630259BA3E7328 /* Pods_topUpNp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_topUpNp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3317C46AE3230ACC5F32931 /* Pods-CashPayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashPayUITests/Pods-CashPayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB4A295BE356DE01A27D221 /* Pods-topUpNpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNpTests/Pods-topUpNpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8B0BE4365563A5CC1D1E5BD /* Pods-topUpNpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topUpNpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-topUpNpUITests/Pods-topUpNpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9CFB683EE56DF6CBEB5D641 /* Pods-CashPayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashPayUITests/Pods-CashPayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FBF0AEEE9E63B6173023345A /* Pods-CashPayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashPayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashPayTests/Pods-CashPayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +283,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4AE0FCC0CBE1F6036534714 /* Pods_topUpNp.framework in Frameworks */,
+				245F2F462032C18B00CF7DC3 /* Contacts.framework in Frameworks */,
+				245F2F472032C18B00CF7DC3 /* ContactsUI.framework in Frameworks */,
+				CA7C512F6CF22EA455038A76 /* Pods_CashPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D942A3549239CB943199B47 /* Pods_topUpNpTests.framework in Frameworks */,
+				D43B81C2866A6F4ACDDC02F8 /* Pods_CashPayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7353F08F3DDD0A30A65CF229 /* Pods_topUpNpUITests.framework in Frameworks */,
+				5172538A57D76ABA35012711 /* Pods_CashPayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +342,97 @@
 				24188245201B5484006E08B8 /* BillpaymentCell.swift */,
 			);
 			path = "Bill Payment";
+			sourceTree = "<group>";
+		};
+		242F9BF12043E8680015DA00 /* PinSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				242F9BF22043E8810015DA00 /* PinSecurity.storyboard */,
+				242F9BF42043E8930015DA00 /* PinSecurityViewController.swift */,
+			);
+			path = PinSecurity;
+			sourceTree = "<group>";
+		};
+		24325FBC202482780023CBB0 /* AddFund */ = {
+			isa = PBXGroup;
+			children = (
+				24325FBD2024828E0023CBB0 /* AddFund.storyboard */,
+				24325FBF2024829C0023CBB0 /* AddFundViewController.swift */,
+			);
+			path = AddFund;
+			sourceTree = "<group>";
+		};
+		24325FC120248BBF0023CBB0 /* PinNo */ = {
+			isa = PBXGroup;
+			children = (
+				24325FC220248BCE0023CBB0 /* Pin.storyboard */,
+				24325FC420248BE10023CBB0 /* PinViewController.swift */,
+			);
+			path = PinNo;
+			sourceTree = "<group>";
+		};
+		24334ACD20299D1300AE83B6 /* Reseller Login */ = {
+			isa = PBXGroup;
+			children = (
+				24334ACE20299D3B00AE83B6 /* ResellerLogin.storyboard */,
+				24334AD020299D4E00AE83B6 /* ResellerLoginViewController.swift */,
+			);
+			path = "Reseller Login";
+			sourceTree = "<group>";
+		};
+		245F2EF72031551000CF7DC3 /* ElectricityBill */ = {
+			isa = PBXGroup;
+			children = (
+				245F2EF82031554100CF7DC3 /* ElectricityBill.storyboard */,
+				245F2EFA203155B300CF7DC3 /* ElectricityBillViewController.swift */,
+			);
+			path = ElectricityBill;
+			sourceTree = "<group>";
+		};
+		245F2EFC2031B00B00CF7DC3 /* Worldlink */ = {
+			isa = PBXGroup;
+			children = (
+				245F2F012031B32100CF7DC3 /* FinalForm */,
+				245F2EFD2031B02100CF7DC3 /* Worldlink.storyboard */,
+				245F2EFF2031B02E00CF7DC3 /* WorldlinkViewController.swift */,
+			);
+			path = Worldlink;
+			sourceTree = "<group>";
+		};
+		245F2F012031B32100CF7DC3 /* FinalForm */ = {
+			isa = PBXGroup;
+			children = (
+				245F2F022031B35F00CF7DC3 /* worldlinkAmount.storyboard */,
+				245F2F042031B37600CF7DC3 /* WorldlinkAmountViewController.swift */,
+			);
+			path = FinalForm;
+			sourceTree = "<group>";
+		};
+		245F2F4E2032F3AB00CF7DC3 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				245F2F4F2032F3D100CF7DC3 /* Aboutus.storyboard */,
+				245F2F512032F3DF00CF7DC3 /* AboutusViewController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		245F2F552033F55500CF7DC3 /* BecomeReseller */ = {
+			isa = PBXGroup;
+			children = (
+				245F2F572033F5A000CF7DC3 /* BecomeReseller.storyboard */,
+				245F2F592033F5B000CF7DC3 /* BecomeResellerViewController.swift */,
+			);
+			path = BecomeReseller;
+			sourceTree = "<group>";
+		};
+		245F2F562033F57F00CF7DC3 /* FindReseller */ = {
+			isa = PBXGroup;
+			children = (
+				245F2F5B2033F5C300CF7DC3 /* FindReseller.storyboard */,
+				245F2F5D2033F5DE00CF7DC3 /* FindResellerViewController.swift */,
+			);
+			path = FindReseller;
 			sourceTree = "<group>";
 		};
 		2486757220062C5600B3180E /* Profile */ = {
@@ -272,14 +480,6 @@
 			path = TypeCollectionVIew;
 			sourceTree = "<group>";
 		};
-		248675952007626D00B3180E /* ListTypeTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				248675962007629600B3180E /* ListTypeCell.swift */,
-			);
-			path = ListTypeTableCell;
-			sourceTree = "<group>";
-		};
 		2486759E20077E4000B3180E /* Transfer Balance */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,10 +512,13 @@
 		248675B4200892A200B3180E /* PaymentForm */ = {
 			isa = PBXGroup;
 			children = (
+				245F2EFC2031B00B00CF7DC3 /* Worldlink */,
+				245F2EF72031551000CF7DC3 /* ElectricityBill */,
 				248675B5200892B700B3180E /* PaymentForm.storyboard */,
 				248675B7200892D300B3180E /* PaymentFormVC.swift */,
 				24991CFC2018A5E600584852 /* AmoutCell.swift */,
-				24991D3820199C1800584852 /* PopUpViewController.swift */,
+				240909B820276A5100B810FD /* PopUp.xib */,
+				240909BA20276E3B00B810FD /* PopUP.swift */,
 			);
 			path = PaymentForm;
 			sourceTree = "<group>";
@@ -334,6 +537,8 @@
 			children = (
 				24CF1954200B6937002A14DA /* Ministatement.storyboard */,
 				24CF1956200B6953002A14DA /* MiniStatementVC.swift */,
+				24325FB82024498D0023CBB0 /* statementCell.swift */,
+				24325FBA20245DB70023CBB0 /* FilterViewController.swift */,
 			);
 			path = "Mini Statement";
 			sourceTree = "<group>";
@@ -343,6 +548,8 @@
 			children = (
 				24DB872D201A26FE00E84856 /* Authorization.swift */,
 				24DB872F201A2DD500E84856 /* ServiceType.swift */,
+				24325FC6202708BE0023CBB0 /* IndentTextfield.swift */,
+				24326004202721630023CBB0 /* ColorHex.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -350,6 +557,14 @@
 		24DB8731201A42D700E84856 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
+				241F82CF201F92790024E4BA /* TopUpService.swift */,
+				241F82D1201F92D30024E4BA /* TransferService.swift */,
+				24325FB42021A50E0023CBB0 /* BillpaymentService.swift */,
+				24334AC920287CA700AE83B6 /* BalanceRefresh.swift */,
+				24FC40B2202C6607007BE139 /* StatementService.swift */,
+				245F2F482032E15300CF7DC3 /* NotificationService.swift */,
+				244FEBEB203FF4C900B076BE /* RechargeService.swift */,
+				244FEBED204001DF00B076BE /* NeaService.swift */,
 			);
 			path = ApiService;
 			sourceTree = "<group>";
@@ -369,11 +584,8 @@
 				24188244201B5460006E08B8 /* Bill Payment */,
 				24188243201B5453006E08B8 /* Recharge Cards */,
 				24188242201B5445006E08B8 /* Topup */,
-				248675952007626D00B3180E /* ListTypeTableCell */,
 				24867594200760A900B3180E /* TypeCollectionVIew */,
 				24DF97BA2004DDBE0016DB50 /* Dashboard.storyboard */,
-				2486756820060A2A00B3180E /* DashViewController.swift */,
-				2486758E2007336A00B3180E /* TabViewController.swift */,
 				2418823E201B48B9006E08B8 /* MainDashVC.swift */,
 			);
 			path = Dashboard;
@@ -388,13 +600,39 @@
 			path = "Reset Password";
 			sourceTree = "<group>";
 		};
+		24FC4099202ACC7B007BE139 /* ResetPin */ = {
+			isa = PBXGroup;
+			children = (
+				24FC409A202ACC94007BE139 /* ResetPin.storyboard */,
+				24FC409C202ACCA1007BE139 /* ResetPinViewController.swift */,
+			);
+			path = ResetPin;
+			sourceTree = "<group>";
+		};
+		24FC409E202AD043007BE139 /* Bank Details */ = {
+			isa = PBXGroup;
+			children = (
+				24FC409F202AD076007BE139 /* BankDetails.storyboard */,
+				245F2F4C2032E9C600CF7DC3 /* BankDetailViewController.swift */,
+			);
+			path = "Bank Details";
+			sourceTree = "<group>";
+		};
+		24FC40A7202AF7AD007BE139 /* PinPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				24FC40A3202AECA9007BE139 /* Pin.xib */,
+				24FC40A8202B0FFE007BE139 /* Pin.swift */,
+			);
+			path = PinPopUp;
+			sourceTree = "<group>";
+		};
 		24FE14D92004A7D800923E50 = {
 			isa = PBXGroup;
 			children = (
-				24FE14E42004A7D800923E50 /* topUpNp */,
-				24991D402019BB8C00584852 /* Assets.xcassets */,
-				24FE14F92004A7D800923E50 /* topUpNpTests */,
-				24FE15042004A7D800923E50 /* topUpNpUITests */,
+				24FE14E42004A7D800923E50 /* CashPay */,
+				24FE14F92004A7D800923E50 /* CashPayTests */,
+				24FE15042004A7D800923E50 /* CashPayUITests */,
 				24FE14E32004A7D800923E50 /* Products */,
 				A6AB40969A4E7C80A2123D36 /* Pods */,
 				E49B09BBF3C08399E628FB05 /* Frameworks */,
@@ -404,14 +642,14 @@
 		24FE14E32004A7D800923E50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24FE14E22004A7D800923E50 /* topUpNp.app */,
-				24FE14F62004A7D800923E50 /* topUpNpTests.xctest */,
-				24FE15012004A7D800923E50 /* topUpNpUITests.xctest */,
+				24FE14E22004A7D800923E50 /* CashPay.app */,
+				24FE14F62004A7D800923E50 /* CashPayTests.xctest */,
+				24FE15012004A7D800923E50 /* CashPayUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24FE14E42004A7D800923E50 /* topUpNp */ = {
+		24FE14E42004A7D800923E50 /* CashPay */ = {
 			isa = PBXGroup;
 			children = (
 				24DB8731201A42D700E84856 /* ApiService */,
@@ -422,31 +660,41 @@
 				24FE14E52004A7D800923E50 /* AppDelegate.swift */,
 				24FE14EE2004A7D800923E50 /* LaunchScreen.storyboard */,
 				24FE14F12004A7D800923E50 /* Info.plist */,
+				24325FB6202441B20023CBB0 /* Assets.xcassets */,
 			);
-			path = topUpNp;
+			path = CashPay;
 			sourceTree = "<group>";
 		};
-		24FE14F92004A7D800923E50 /* topUpNpTests */ = {
+		24FE14F92004A7D800923E50 /* CashPayTests */ = {
 			isa = PBXGroup;
 			children = (
 				24FE14FA2004A7D800923E50 /* topUpNpTests.swift */,
 				24FE14FC2004A7D800923E50 /* Info.plist */,
 			);
-			path = topUpNpTests;
+			path = CashPayTests;
 			sourceTree = "<group>";
 		};
-		24FE15042004A7D800923E50 /* topUpNpUITests */ = {
+		24FE15042004A7D800923E50 /* CashPayUITests */ = {
 			isa = PBXGroup;
 			children = (
 				24FE15052004A7D800923E50 /* topUpNpUITests.swift */,
 				24FE15072004A7D800923E50 /* Info.plist */,
 			);
-			path = topUpNpUITests;
+			path = CashPayUITests;
 			sourceTree = "<group>";
 		};
 		24FE15132004A87600923E50 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				242F9BF12043E8680015DA00 /* PinSecurity */,
+				245F2F562033F57F00CF7DC3 /* FindReseller */,
+				245F2F552033F55500CF7DC3 /* BecomeReseller */,
+				245F2F4E2032F3AB00CF7DC3 /* AboutUs */,
+				24FC40A7202AF7AD007BE139 /* PinPopUp */,
+				24FC409E202AD043007BE139 /* Bank Details */,
+				24FC4099202ACC7B007BE139 /* ResetPin */,
+				24325FC120248BBF0023CBB0 /* PinNo */,
+				24325FBC202482780023CBB0 /* AddFund */,
 				24CF1953200B6917002A14DA /* Mini Statement */,
 				24164EDD200B2FD80096B055 /* ViewContact */,
 				248675B92008C18300B3180E /* AddContact */,
@@ -460,6 +708,7 @@
 				24DF97BE2004E2840016DB50 /* Reset Password */,
 				24DF97B92004DDB00016DB50 /* Dashboard */,
 				24DF97B42004DBA40016DB50 /* Forgot */,
+				24334ACD20299D1300AE83B6 /* Reseller Login */,
 				24FE15172004A8BF00923E50 /* Signin */,
 				24FE15162004A8B600923E50 /* Signup */,
 				24FE15152004A8A700923E50 /* MainView */,
@@ -474,7 +723,20 @@
 				2418823A201B059F006E08B8 /* user.swift */,
 				24991D462019F28300584852 /* SignUp.swift */,
 				24991D442019F19400584852 /* login.swift */,
-				24188240201B4D7C006E08B8 /* AuthModel.swift */,
+				241F82C9201DD1FE0024E4BA /* ErrorResponse.swift */,
+				241F82CB201DE25A0024E4BA /* TopUp.swift */,
+				241F82CD201F1E100024E4BA /* Transfer.swift */,
+				241F82D3201F95C90024E4BA /* SuccessResponse.swift */,
+				241F82D720219CB90024E4BA /* Billpayment.swift */,
+				24334AD22029B97300AE83B6 /* BalanceRef.swift */,
+				24FC4091202A0CF2007BE139 /* reseller.swift */,
+				24FC4093202A0DD1007BE139 /* ResellerLogin.swift */,
+				24FC4095202AB23E007BE139 /* ForgotPassword.swift */,
+				24FC4097202AB798007BE139 /* ResetPassword.swift */,
+				24FC40AA202C46B5007BE139 /* normalUser.swift */,
+				24FC40B0202C6054007BE139 /* Statement.swift */,
+				24638E44202D615500A72611 /* StatementData.swift */,
+				244FEBEF2040021000B076BE /* NeaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,6 +777,12 @@
 				376189F61206B62F252E697D /* Pods-topUpNpTests.release.xcconfig */,
 				AD850375F50E8E87F87B36B1 /* Pods-topUpNpUITests.debug.xcconfig */,
 				F8B0BE4365563A5CC1D1E5BD /* Pods-topUpNpUITests.release.xcconfig */,
+				1F8B4F7C691ACC93A85071AF /* Pods-CashPay.debug.xcconfig */,
+				B6C104609DD120F21E32A0C5 /* Pods-CashPay.release.xcconfig */,
+				FBF0AEEE9E63B6173023345A /* Pods-CashPayTests.debug.xcconfig */,
+				B64FB08268554B3F54981F82 /* Pods-CashPayTests.release.xcconfig */,
+				D3317C46AE3230ACC5F32931 /* Pods-CashPayUITests.debug.xcconfig */,
+				F9CFB683EE56DF6CBEB5D641 /* Pods-CashPayUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -522,9 +790,14 @@
 		E49B09BBF3C08399E628FB05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				245F2F442032C18B00CF7DC3 /* Contacts.framework */,
+				245F2F452032C18B00CF7DC3 /* ContactsUI.framework */,
 				CABA2BF6E5630259BA3E7328 /* Pods_topUpNp.framework */,
 				96C92C844D56B1C21A7CB9AD /* Pods_topUpNpTests.framework */,
 				5EB8EA0F89A76919365BF6F2 /* Pods_topUpNpUITests.framework */,
+				B70844393A9E72DA0D682120 /* Pods_CashPay.framework */,
+				64D0223BF1A32FD47BBF4C9A /* Pods_CashPayTests.framework */,
+				2BFA72DF02A38ABD5AF80C48 /* Pods_CashPayUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -532,9 +805,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24FE14E12004A7D800923E50 /* topUpNp */ = {
+		24FE14E12004A7D800923E50 /* CashPay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24FE150A2004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNp" */;
+			buildConfigurationList = 24FE150A2004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPay" */;
 			buildPhases = (
 				C88C4DCD03FFACCBFDBFF1B6 /* [CP] Check Pods Manifest.lock */,
 				24FE14DE2004A7D800923E50 /* Sources */,
@@ -547,14 +820,14 @@
 			);
 			dependencies = (
 			);
-			name = topUpNp;
+			name = CashPay;
 			productName = topUpNp;
-			productReference = 24FE14E22004A7D800923E50 /* topUpNp.app */;
+			productReference = 24FE14E22004A7D800923E50 /* CashPay.app */;
 			productType = "com.apple.product-type.application";
 		};
-		24FE14F52004A7D800923E50 /* topUpNpTests */ = {
+		24FE14F52004A7D800923E50 /* CashPayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24FE150D2004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNpTests" */;
+			buildConfigurationList = 24FE150D2004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPayTests" */;
 			buildPhases = (
 				1924BF0A21BFA3153045BD2A /* [CP] Check Pods Manifest.lock */,
 				24FE14F22004A7D800923E50 /* Sources */,
@@ -568,14 +841,14 @@
 			dependencies = (
 				24FE14F82004A7D800923E50 /* PBXTargetDependency */,
 			);
-			name = topUpNpTests;
+			name = CashPayTests;
 			productName = topUpNpTests;
-			productReference = 24FE14F62004A7D800923E50 /* topUpNpTests.xctest */;
+			productReference = 24FE14F62004A7D800923E50 /* CashPayTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		24FE15002004A7D800923E50 /* topUpNpUITests */ = {
+		24FE15002004A7D800923E50 /* CashPayUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24FE15102004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNpUITests" */;
+			buildConfigurationList = 24FE15102004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPayUITests" */;
 			buildPhases = (
 				7A0ACCC0A01338D2874CCE16 /* [CP] Check Pods Manifest.lock */,
 				24FE14FD2004A7D800923E50 /* Sources */,
@@ -589,9 +862,9 @@
 			dependencies = (
 				24FE15032004A7D800923E50 /* PBXTargetDependency */,
 			);
-			name = topUpNpUITests;
+			name = CashPayUITests;
 			productName = topUpNpUITests;
-			productReference = 24FE15012004A7D800923E50 /* topUpNpUITests.xctest */;
+			productReference = 24FE15012004A7D800923E50 /* CashPayUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -620,7 +893,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24FE14DD2004A7D800923E50 /* Build configuration list for PBXProject "topUpNp" */;
+			buildConfigurationList = 24FE14DD2004A7D800923E50 /* Build configuration list for PBXProject "CashPay" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -633,9 +906,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24FE14E12004A7D800923E50 /* topUpNp */,
-				24FE14F52004A7D800923E50 /* topUpNpTests */,
-				24FE15002004A7D800923E50 /* topUpNpUITests */,
+				24FE14E12004A7D800923E50 /* CashPay */,
+				24FE14F52004A7D800923E50 /* CashPayTests */,
+				24FE15002004A7D800923E50 /* CashPayUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -645,24 +918,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245F2EFE2031B02100CF7DC3 /* Worldlink.storyboard in Resources */,
+				24325FC320248BCE0023CBB0 /* Pin.storyboard in Resources */,
 				2423CB6C2004D50900EB196E /* Signin.storyboard in Resources */,
 				248675BB2008C19E00B3180E /* AddContact.storyboard in Resources */,
 				248675A62008698400B3180E /* InsideCategories.storyboard in Resources */,
+				24334ACF20299D3B00AE83B6 /* ResellerLogin.storyboard in Resources */,
+				245F2F5C2033F5C300CF7DC3 /* FindReseller.storyboard in Resources */,
 				24CF1955200B6937002A14DA /* Ministatement.storyboard in Resources */,
 				248675892007286D00B3180E /* SideMenu.storyboard in Resources */,
+				240909B920276A5100B810FD /* PopUp.xib in Resources */,
 				24DF97B62004DBB70016DB50 /* Forgot.storyboard in Resources */,
 				24FE14F02004A7D800923E50 /* LaunchScreen.storyboard in Resources */,
+				242F9BF32043E8810015DA00 /* PinSecurity.storyboard in Resources */,
 				248675B6200892B700B3180E /* PaymentForm.storyboard in Resources */,
 				24164EDF200B2FEA0096B055 /* ViewContact.storyboard in Resources */,
+				245F2F582033F5A000CF7DC3 /* BecomeReseller.storyboard in Resources */,
 				24FE15192004C0AC00923E50 /* Signup.storyboard in Resources */,
 				24DF97C02004E2B00016DB50 /* ResetPassword.storyboard in Resources */,
+				245F2F502032F3D100CF7DC3 /* Aboutus.storyboard in Resources */,
+				245F2F032031B35F00CF7DC3 /* worldlinkAmount.storyboard in Resources */,
 				248675A020077E5500B3180E /* Transfer.storyboard in Resources */,
+				24FC40A0202AD076007BE139 /* BankDetails.storyboard in Resources */,
 				2486757520062CA000B3180E /* Profile.storyboard in Resources */,
 				2486757B2007178E00B3180E /* setting.storyboard in Resources */,
 				24DF97BB2004DDBE0016DB50 /* Dashboard.storyboard in Resources */,
+				24FC40A4202AECA9007BE139 /* Pin.xib in Resources */,
+				24325FBE2024828E0023CBB0 /* AddFund.storyboard in Resources */,
 				24FE14EB2004A7D800923E50 /* Main.storyboard in Resources */,
-				24991D412019BB8D00584852 /* Assets.xcassets in Resources */,
+				24325FB7202441B30023CBB0 /* Assets.xcassets in Resources */,
 				248675AB200869C800B3180E /* Notification.storyboard in Resources */,
+				24FC409B202ACC94007BE139 /* ResetPin.storyboard in Resources */,
+				245F2EF92031554100CF7DC3 /* ElectricityBill.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,7 +981,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-topUpNpTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CashPayTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -713,7 +1000,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNpUITests/Pods-topUpNpUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPayUITests/Pods-CashPayUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		732AA545113699CD145621AB /* [CP] Copy Pods Resources */ = {
@@ -728,7 +1015,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNpTests/Pods-topUpNpTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPayTests/Pods-CashPayTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		78FCFD5334476F4E648ADEA9 /* [CP] Copy Pods Resources */ = {
@@ -743,7 +1030,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNp/Pods-topUpNp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPay/Pods-CashPay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A0ACCC0A01338D2874CCE16 /* [CP] Check Pods Manifest.lock */ = {
@@ -757,7 +1044,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-topUpNpUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CashPayUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -770,30 +1057,44 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-topUpNp/Pods-topUpNp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-CashPay/Pods-CashPay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BRYXBanner/BRYXBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/EPContactsPicker/EPContactsPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyContacts/SwiftyContacts.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRYXBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EPContactsPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyContacts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNp/Pods-topUpNp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPay/Pods-CashPay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A31BC41D3FCACA08EAF6B837 /* [CP] Embed Pods Frameworks */ = {
@@ -808,7 +1109,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNpTests/Pods-topUpNpTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPayTests/Pods-CashPayTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A90010CA31AEF32629D53031 /* [CP] Embed Pods Frameworks */ = {
@@ -823,7 +1124,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-topUpNpUITests/Pods-topUpNpUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashPayUITests/Pods-CashPayUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C88C4DCD03FFACCBFDBFF1B6 /* [CP] Check Pods Manifest.lock */ = {
@@ -837,7 +1138,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-topUpNp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CashPay-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -851,45 +1152,80 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245F2F522032F3DF00CF7DC3 /* AboutusViewController.swift in Sources */,
 				2423CB6E2004D51500EB196E /* SigninViewController.swift in Sources */,
+				24FC40B3202C6607007BE139 /* StatementService.swift in Sources */,
+				245F2F5E2033F5DE00CF7DC3 /* FindResellerViewController.swift in Sources */,
 				248675992007634700B3180E /* ListTypeCollectionCell.swift in Sources */,
-				2486756920060A2A00B3180E /* DashViewController.swift in Sources */,
 				24991D452019F19400584852 /* login.swift in Sources */,
 				248675B8200892D300B3180E /* PaymentFormVC.swift in Sources */,
+				241F82CC201DE25A0024E4BA /* TopUp.swift in Sources */,
+				244FEBF02040021000B076BE /* NeaModel.swift in Sources */,
+				24325FC02024829C0023CBB0 /* AddFundViewController.swift in Sources */,
+				24325FB52021A50E0023CBB0 /* BillpaymentService.swift in Sources */,
 				24FE151B2004C0B900923E50 /* SignUpViewController.swift in Sources */,
+				24325FC520248BE10023CBB0 /* PinViewController.swift in Sources */,
 				24FE14E82004A7D800923E50 /* ViewController.swift in Sources */,
 				24164EE1200B2FFD0096B055 /* ViewContactVC.swift in Sources */,
+				24FC4096202AB23E007BE139 /* ForgotPassword.swift in Sources */,
 				2486759320073D5E00B3180E /* SettingViewController.swift in Sources */,
 				24164EE3200B365A0096B055 /* ViewCustomCell.swift in Sources */,
 				2486758D20072C6700B3180E /* SideMenuCell.swift in Sources */,
 				24DF97B82004DBC20016DB50 /* ForgotViewController.swift in Sources */,
+				24334AD32029B97300AE83B6 /* BalanceRef.swift in Sources */,
+				24334ACA20287CA700AE83B6 /* BalanceRefresh.swift in Sources */,
 				248675B320088C2C00B3180E /* Wireframe.swift in Sources */,
+				241F82D2201F92D30024E4BA /* TransferService.swift in Sources */,
 				2486757720062CB600B3180E /* ProfileViewController.swift in Sources */,
+				241F82D0201F92790024E4BA /* TopUpService.swift in Sources */,
+				245F2EFB203155B300CF7DC3 /* ElectricityBillViewController.swift in Sources */,
+				244FEBEC203FF4C900B076BE /* RechargeService.swift in Sources */,
+				24FC409D202ACCA1007BE139 /* ResetPinViewController.swift in Sources */,
 				24DB872E201A26FE00E84856 /* Authorization.swift in Sources */,
+				245F2F4D2032E9C600CF7DC3 /* BankDetailViewController.swift in Sources */,
 				24991CFD2018A5E600584852 /* AmoutCell.swift in Sources */,
 				24CF1957200B6953002A14DA /* MiniStatementVC.swift in Sources */,
-				24188241201B4D7C006E08B8 /* AuthModel.swift in Sources */,
 				248675A82008699D00B3180E /* InsideCategoriesViewController.swift in Sources */,
+				24638E45202D615500A72611 /* StatementData.swift in Sources */,
+				241F82D820219CB90024E4BA /* Billpayment.swift in Sources */,
 				2418823F201B48B9006E08B8 /* MainDashVC.swift in Sources */,
 				24FE14E62004A7D800923E50 /* AppDelegate.swift in Sources */,
+				241F82D4201F95C90024E4BA /* SuccessResponse.swift in Sources */,
 				248675AD200869D500B3180E /* NotificationViewController.swift in Sources */,
+				245F2F052031B37600CF7DC3 /* WorldlinkAmountViewController.swift in Sources */,
 				24991D472019F28300584852 /* SignUp.swift in Sources */,
+				242F9BF52043E8930015DA00 /* PinSecurityViewController.swift in Sources */,
 				248675B120087FDD00B3180E /* NotificationCell.swift in Sources */,
 				24188248201B549C006E08B8 /* RechargeCardsCell.swift in Sources */,
+				24326005202721630023CBB0 /* ColorHex.swift in Sources */,
+				24325FB92024498D0023CBB0 /* statementCell.swift in Sources */,
+				24325FBB20245DB70023CBB0 /* FilterViewController.swift in Sources */,
 				2418823B201B059F006E08B8 /* user.swift in Sources */,
+				241F82CE201F1E100024E4BA /* Transfer.swift in Sources */,
+				24FC40AB202C46B5007BE139 /* normalUser.swift in Sources */,
 				24188239201AF585006E08B8 /* ResetPin.swift in Sources */,
-				248675972007629600B3180E /* ListTypeCell.swift in Sources */,
+				24FC40A9202B0FFE007BE139 /* Pin.swift in Sources */,
 				24DF97C22004E2C20016DB50 /* ResetPasswordViewController.swift in Sources */,
 				248675AF20086C8900B3180E /* InsideCell.swift in Sources */,
+				245F2F002031B02E00CF7DC3 /* WorldlinkViewController.swift in Sources */,
+				24325FC7202708BE0023CBB0 /* IndentTextfield.swift in Sources */,
 				248675792006354000B3180E /* profileCustomCell.swift in Sources */,
-				24991D3920199C1800584852 /* PopUpViewController.swift in Sources */,
+				24334AD120299D4E00AE83B6 /* ResellerLoginViewController.swift in Sources */,
 				248675A220077E7400B3180E /* TransferViewController.swift in Sources */,
 				248675BD2008C1AC00B3180E /* AddContactViewController.swift in Sources */,
-				2486758F2007336A00B3180E /* TabViewController.swift in Sources */,
+				240909BB20276E3B00B810FD /* PopUP.swift in Sources */,
+				24FC4098202AB798007BE139 /* ResetPassword.swift in Sources */,
+				24FC4092202A0CF2007BE139 /* reseller.swift in Sources */,
+				24FC4094202A0DD1007BE139 /* ResellerLogin.swift in Sources */,
+				245F2F492032E15300CF7DC3 /* NotificationService.swift in Sources */,
+				24FC40B1202C6054007BE139 /* Statement.swift in Sources */,
 				2418824A201B54BB006E08B8 /* TopupCell.swift in Sources */,
 				24188246201B5484006E08B8 /* BillpaymentCell.swift in Sources */,
+				244FEBEE204001DF00B076BE /* NeaService.swift in Sources */,
+				241F82CA201DD1FE0024E4BA /* ErrorResponse.swift in Sources */,
 				2486758B2007288500B3180E /* SideMenuViewController.swift in Sources */,
 				24DB8730201A2DD500E84856 /* ServiceType.swift in Sources */,
+				245F2F5A2033F5B000CF7DC3 /* BecomeResellerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,12 +1250,12 @@
 /* Begin PBXTargetDependency section */
 		24FE14F82004A7D800923E50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24FE14E12004A7D800923E50 /* topUpNp */;
+			target = 24FE14E12004A7D800923E50 /* CashPay */;
 			targetProxy = 24FE14F72004A7D800923E50 /* PBXContainerItemProxy */;
 		};
 		24FE15032004A7D800923E50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 24FE14E12004A7D800923E50 /* topUpNp */;
+			target = 24FE14E12004A7D800923E50 /* CashPay */;
 			targetProxy = 24FE15022004A7D800923E50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1053,14 +1389,14 @@
 		};
 		24FE150B2004A7D800923E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571B5A5EF3A6006BDD64D6F0 /* Pods-topUpNp.debug.xcconfig */;
+			baseConfigurationReference = 1F8B4F7C691ACC93A85071AF /* Pods-CashPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FVUQ89F2G;
-				INFOPLIST_FILE = topUpNp/Info.plist;
+				INFOPLIST_FILE = CashPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rojan.topUpNp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashpay.CashPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1069,14 +1405,14 @@
 		};
 		24FE150C2004A7D800923E50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC672A499C4FD24C45CD8B92 /* Pods-topUpNp.release.xcconfig */;
+			baseConfigurationReference = B6C104609DD120F21E32A0C5 /* Pods-CashPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FVUQ89F2G;
-				INFOPLIST_FILE = topUpNp/Info.plist;
+				INFOPLIST_FILE = CashPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rojan.topUpNp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cashpay.CashPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1085,7 +1421,7 @@
 		};
 		24FE150E2004A7D800923E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAB4A295BE356DE01A27D221 /* Pods-topUpNpTests.debug.xcconfig */;
+			baseConfigurationReference = FBF0AEEE9E63B6173023345A /* Pods-CashPayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1097,13 +1433,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topUpNp.app/topUpNp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashPay.app/CashPay";
 			};
 			name = Debug;
 		};
 		24FE150F2004A7D800923E50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 376189F61206B62F252E697D /* Pods-topUpNpTests.release.xcconfig */;
+			baseConfigurationReference = B64FB08268554B3F54981F82 /* Pods-CashPayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1115,13 +1451,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/topUpNp.app/topUpNp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashPay.app/CashPay";
 			};
 			name = Release;
 		};
 		24FE15112004A7D800923E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD850375F50E8E87F87B36B1 /* Pods-topUpNpUITests.debug.xcconfig */;
+			baseConfigurationReference = D3317C46AE3230ACC5F32931 /* Pods-CashPayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1138,7 +1474,7 @@
 		};
 		24FE15122004A7D800923E50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8B0BE4365563A5CC1D1E5BD /* Pods-topUpNpUITests.release.xcconfig */;
+			baseConfigurationReference = F9CFB683EE56DF6CBEB5D641 /* Pods-CashPayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1156,7 +1492,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24FE14DD2004A7D800923E50 /* Build configuration list for PBXProject "topUpNp" */ = {
+		24FE14DD2004A7D800923E50 /* Build configuration list for PBXProject "CashPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24FE15082004A7D800923E50 /* Debug */,
@@ -1165,7 +1501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24FE150A2004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNp" */ = {
+		24FE150A2004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24FE150B2004A7D800923E50 /* Debug */,
@@ -1174,7 +1510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24FE150D2004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNpTests" */ = {
+		24FE150D2004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24FE150E2004A7D800923E50 /* Debug */,
@@ -1183,7 +1519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24FE15102004A7D800923E50 /* Build configuration list for PBXNativeTarget "topUpNpUITests" */ = {
+		24FE15102004A7D800923E50 /* Build configuration list for PBXNativeTarget "CashPayUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24FE15112004A7D800923E50 /* Debug */,

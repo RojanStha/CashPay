@@ -7,3 +7,18 @@
 //
 
 import Foundation
+class ResetPassword{
+    
+    var email: String?
+    var verificationCode:String?
+    var newpass:String?
+    
+    
+    
+    
+    init(email : String, verification: String, newPassword:String){
+        self.email = email
+        self.verificationCode = verification
+        self.newpass = newPassword
+        }
+}

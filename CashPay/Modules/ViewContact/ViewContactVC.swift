@@ -7,14 +7,15 @@
 //
 
 import UIKit
-
+import SwiftyContacts
+import Contacts
 class ViewContactVC: UIViewController {
    
     @IBOutlet weak var tableView: UITableView!
-    
+    var contacts = [CNContact]()
    var Username = ["Justin Bieber","Ariana grande","Priyanka Karki","Rajesh Hamal"]
-    var TxtEmail = ["justinbiber@gmail.com","arianagrande@gmail.com","priyankakarki@gmail.com","rajeshhamal@gmail.com"]
-    var TxtPhone = ["9812345678","9887654321","9811223344","98334455665"]
+    var TxtEmail = ["Test@gmail.com","arianagrande@gmail.com","priyankakarki@gmail.com","rajeshhamal@gmail.com"]
+    var TxtPhone = ["9849650000","9887654321","9811223344","98334455665"]
     var ProfileImage = [UIImage(named:"justin"),UIImage(named:"ariana"),UIImage(named:"ariana"),UIImage(named:"justin")]
     
     var TxtRemarks = ["Lorem ipsum dolor sit amet,et dolore magna aliqua. ","Lorem ipsum dolor sit amet, consectetur alabore et dolore magna aliqua. ","Lorem ipsum dolor sit amet, consectetur dunt ut labore et dolore magna aliqua. ","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmoliqua. "]
@@ -24,7 +25,7 @@ class ViewContactVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-
+        fetchContactsData()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +38,38 @@ class ViewContactVC: UIViewController {
         self.title = ""
     }
     
-    
+    func fetchContactsData() {
+        requestAccess { (responce) in
+            if responce{
+                authorizationStatus { (status) in
+                    switch status {
+                    case .authorized:
+                        fetchContacts(completionHandler: { (result) in
+                            switch result{
+                            case .Success(response: let contacts):
+                                self.contacts = contacts
+                                self.tableView.reloadData()
+                                
+                                break
+                            case .Error(error: let error):
+
+                                print(error)
+                                break
+                            }
+                        })
+                        break
+                    case .denied:
+                        print("denied")
+                        break
+                    default:
+                        break
+                    }
+                }
+            } else {
+                print("Contacts Acess Denied")
+            }
+        }
+    }
     
     @IBAction func AddContact(_ sender: Any) {
         
@@ -47,23 +79,23 @@ class ViewContactVC: UIViewController {
         
         
     }
-    
+   
     
   
 
 }
 extension ViewContactVC : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Username.count
+        return contacts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "viewcell", for: indexPath) as! ViewCustomCell
-        cell.profileImg.image = ProfileImage[indexPath.row]
-        cell.txtUsername.text = Username[indexPath.row]
-        cell.txtPhone.text = TxtPhone[indexPath.row]
-        cell.txtEmail.text = TxtEmail[indexPath.row]
-        cell.txtRemarks.text! = TxtRemarks[indexPath.row]
+        cell.txtUsername.text = contacts[indexPath.row].givenName
+        cell.txtPhone.text = contacts[indexPath.row].phoneNumbers.first?.value.stringValue
+        cell.txtEmail.text = "\(contacts[indexPath.row].emailAddresses.first?.value ?? NSString())"
+        cell.txtRemarks.text! = contacts[indexPath.row].note
+        cell.profileImg.image = UIImage(data: contacts[indexPath.row].imageData ?? Data())
         cell.setupPage()
         return cell
     }
@@ -121,14 +153,36 @@ extension ViewContactVC : UITableViewDelegate {
 //        
 //      
 //    }
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if (editingStyle == .delete){
-            Username.remove(at: indexPath.item)
-            tableView.deleteRows(at: [indexPath], with: .automatic)
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if (editingStyle == .delete){
+//            Username.remove(at: indexPath.item)
+//            tableView.deleteRows(at: [indexPath], with: .automatic)
+//
+//        }
+//
+//
+//    }
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            deleteContact(Contact: self.contacts[indexPath.row].mutableCopy() as! CNMutableContact) { (result) in
+                switch result{
+                case .Success(response: let bool):
+                    if bool{
+                        self.fetchContactsData()
+                    }
+                    break
+                case .Error(error: let error):
+                    print(error.localizedDescription)
+                    break
+                }
+            }
             
         }
         
         
+        return [delete]
     }
 
+
 }
+

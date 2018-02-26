@@ -1,7 +1,113 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Pin Security View Controller-->
+        <scene sceneID="cKa-Ty-96b">
+            <objects>
+                <viewController storyboardIdentifier="PinSecurityViewController" id="ku8-S8-csC" customClass="PinSecurityViewController" customModule="CashPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="alm-gQ-xNC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-87-66L" customClass="PinCodeTextField" customModule="PinCodeTextField">
+                                <rect key="frame" x="45" y="201" width="285" height="55"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="xlV-PU-itZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterLimit">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineVMargin">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="underlineHSpacing">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="secureText" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="needToUpdateUnderlines" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                        <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="updatedUnderlineColor">
+                                        <color key="value" red="0.11247316747903824" green="0.20233684778213501" blue="0.40999537706375122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icN-ZK-swc">
+                                <rect key="frame" x="80" y="406" width="215" height="42"/>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.20392156862745098" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="x6p-Sm-fDH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnDone:" destination="ku8-S8-csC" eventType="touchUpInside" id="9as-rB-S15"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Pin no" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-AM-ucr">
+                                <rect key="frame" x="100" y="105" width="175" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.1124731675" green="0.2023368478" blue="0.4099953771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter Your 4 Digit Pin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsD-sm-kA8">
+                                <rect key="frame" x="90" y="134" width="195" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="cfn-rG-tF7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8JE-87-66L" firstAttribute="leading" secondItem="van-L0-GgN" secondAttribute="leading" constant="45" id="1Aw-dL-QhE"/>
+                            <constraint firstItem="van-L0-GgN" firstAttribute="trailing" secondItem="icN-ZK-swc" secondAttribute="trailing" constant="80" id="7tN-yw-gd1"/>
+                            <constraint firstItem="van-L0-GgN" firstAttribute="trailing" secondItem="fSX-AM-ucr" secondAttribute="trailing" constant="100" id="HQl-mb-kez"/>
+                            <constraint firstItem="8JE-87-66L" firstAttribute="top" secondItem="nsD-sm-kA8" secondAttribute="bottom" constant="50" id="KIy-nr-mgm"/>
+                            <constraint firstItem="fSX-AM-ucr" firstAttribute="top" secondItem="van-L0-GgN" secondAttribute="top" constant="85" id="LF4-JA-xM9"/>
+                            <constraint firstItem="van-L0-GgN" firstAttribute="trailing" secondItem="nsD-sm-kA8" secondAttribute="trailing" constant="90" id="a2l-gZ-bdq"/>
+                            <constraint firstItem="icN-ZK-swc" firstAttribute="leading" secondItem="van-L0-GgN" secondAttribute="leading" constant="80" id="c6y-C5-hPB"/>
+                            <constraint firstItem="fSX-AM-ucr" firstAttribute="leading" secondItem="van-L0-GgN" secondAttribute="leading" constant="100" id="caa-wd-E5t"/>
+                            <constraint firstItem="nsD-sm-kA8" firstAttribute="leading" secondItem="van-L0-GgN" secondAttribute="leading" constant="90" id="qxY-e8-qgo"/>
+                            <constraint firstItem="nsD-sm-kA8" firstAttribute="top" secondItem="fSX-AM-ucr" secondAttribute="bottom" constant="5" id="sUz-2F-bof"/>
+                            <constraint firstItem="fSX-AM-ucr" firstAttribute="centerX" secondItem="alm-gQ-xNC" secondAttribute="centerX" id="tq7-AU-GMK"/>
+                            <constraint firstItem="van-L0-GgN" firstAttribute="trailing" secondItem="8JE-87-66L" secondAttribute="trailing" constant="45" id="y5S-ky-vbF"/>
+                            <constraint firstItem="icN-ZK-swc" firstAttribute="top" secondItem="8JE-87-66L" secondAttribute="bottom" constant="150" id="zcy-Pw-MxJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="van-L0-GgN"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDone" destination="icN-ZK-swc" id="bF6-zz-Gi6"/>
+                        <outlet property="pinView" destination="8JE-87-66L" id="T22-7C-Tkc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1s-48-7AO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="283.80809595202402"/>
+        </scene>
+    </scenes>
 </document>

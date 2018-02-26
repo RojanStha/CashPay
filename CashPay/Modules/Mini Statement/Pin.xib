@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PinView" id="FQ5-kf-NoV" customClass="PinView" customModule="CashPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Cb-2K-ksL">
+                    <rect key="frame" x="25" y="218.5" width="325" height="230"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fy-uD-4iN">
+                            <rect key="frame" x="14" y="84" width="297" height="60"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GEe-uC-0ri">
+                                    <rect key="frame" x="8" y="15" width="281" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="GEe-uC-0ri" firstAttribute="top" secondItem="2fy-uD-4iN" secondAttribute="top" constant="15" id="AW8-9v-bqO"/>
+                                <constraint firstAttribute="height" constant="60" id="LKA-xV-9qY"/>
+                                <constraint firstItem="GEe-uC-0ri" firstAttribute="leading" secondItem="2fy-uD-4iN" secondAttribute="leading" constant="8" id="MNY-Sv-qd0"/>
+                                <constraint firstAttribute="bottom" secondItem="GEe-uC-0ri" secondAttribute="bottom" constant="15" id="iP6-cB-BM7"/>
+                                <constraint firstAttribute="trailing" secondItem="GEe-uC-0ri" secondAttribute="trailing" constant="8" id="w5o-x4-Njn"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuG-9L-gNx">
+                            <rect key="frame" x="30" y="164" width="265" height="40"/>
+                            <color key="backgroundColor" red="0.1124731675" green="0.2023368478" blue="0.4099953771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="VWg-Ze-2fn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="DoneBtn:" destination="FQ5-kf-NoV" eventType="touchUpInside" id="EaC-8A-Tum"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pinlock" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-bF-bfP">
+                            <rect key="frame" x="137" y="16" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ZXd-c4-Ryj"/>
+                                <constraint firstAttribute="width" constant="50" id="klT-EK-As8"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="LsL-bF-bfP" firstAttribute="top" secondItem="9Cb-2K-ksL" secondAttribute="top" constant="16" id="0BG-jx-Gf3"/>
+                        <constraint firstAttribute="trailing" secondItem="2fy-uD-4iN" secondAttribute="trailing" constant="14" id="23g-tJ-SPA"/>
+                        <constraint firstItem="2fy-uD-4iN" firstAttribute="top" secondItem="LsL-bF-bfP" secondAttribute="bottom" constant="18" id="DbG-SK-x85"/>
+                        <constraint firstItem="2fy-uD-4iN" firstAttribute="leading" secondItem="9Cb-2K-ksL" secondAttribute="leading" constant="14" id="IfJ-9s-O9h"/>
+                        <constraint firstItem="wuG-9L-gNx" firstAttribute="top" secondItem="2fy-uD-4iN" secondAttribute="bottom" constant="20" id="Q6H-1w-rP1"/>
+                        <constraint firstItem="wuG-9L-gNx" firstAttribute="leading" secondItem="9Cb-2K-ksL" secondAttribute="leading" constant="30" id="YmA-CC-5h3"/>
+                        <constraint firstItem="LsL-bF-bfP" firstAttribute="centerX" secondItem="9Cb-2K-ksL" secondAttribute="centerX" id="eJs-Ly-Ywk"/>
+                        <constraint firstAttribute="height" constant="230" id="giP-B0-Mze"/>
+                        <constraint firstAttribute="trailing" secondItem="wuG-9L-gNx" secondAttribute="trailing" constant="30" id="rSD-sc-OUl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.74571917809999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6SE-4D-U9R" firstAttribute="trailing" secondItem="9Cb-2K-ksL" secondAttribute="trailing" constant="25" id="1zN-0b-ehI"/>
+                <constraint firstItem="9Cb-2K-ksL" firstAttribute="centerY" secondItem="FQ5-kf-NoV" secondAttribute="centerY" id="6bw-BF-pWe"/>
+                <constraint firstItem="9Cb-2K-ksL" firstAttribute="centerX" secondItem="FQ5-kf-NoV" secondAttribute="centerX" id="dBz-E1-eT8"/>
+                <constraint firstItem="9Cb-2K-ksL" firstAttribute="leading" secondItem="6SE-4D-U9R" secondAttribute="leading" constant="25" id="pNw-0b-EfO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6SE-4D-U9R"/>
+            <connections>
+                <outlet property="PinTxtView" destination="2fy-uD-4iN" id="Sam-GO-eSY"/>
+                <outlet property="btnDone" destination="wuG-9L-gNx" id="SC5-af-I4w"/>
+                <outlet property="dialougeView" destination="9Cb-2K-ksL" id="WQU-gP-hcY"/>
+                <outlet property="txtPinNo" destination="GEe-uC-0ri" id="amJ-7i-gX2"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pinlock" width="64" height="64"/>
+    </resources>
+</document>
